@@ -1,0 +1,84 @@
+
+Bhawna Gunwani:
+
+
+	npm install -g @angular/cli@11.2.8
+
+	ng --version
+	
+	ng new angular-quickstart-project
+	cd angular-quickstart-project
+	ng serve -o
+	
+	Error: Cannot find module '@angular-devkit/build-angular/package.json'
+	
+	npm install
+	npm install --only=dev
+	ng serve -o
+	
+	Ctrl+C: to terminate already running project
+	
+	Ctrl+` : To show or hider terminal
+	
+------------------------------------------------
+
+Every Angular Application will have at least one ROOT component.
+Every Angular Application will also have at least one Application Module.
+
+
+	When you write ng serve -o to run angular project:
+	
+	1. It goes to angular.json and checks the index property.
+	2. It checks the root component selector rendering in index.html
+
+	Let's find out root component:
+	
+	3. Go back to angular.json and checks the main property.
+	4. Check the bootstrap module and navigates to that module.
+	5. Check the Bootstrap/Root Component set up in module file.
+	6. Check the selector mentioned in Root Component whether it matches with index.html or not.
+	
+-------------------------------------------------------
+
+A component can have four files:
+
+	customer.component.ts
+	customer.component.html
+	customer.component.css
+	customer.component.spec.ts
+	Register your component into app.module.ts
+	
+--------------------------------------------------------
+
+	ng generate component customer
+
+--------------------------------------------------------
+
+Data Binding:
+
+	1. Interpolation Binding
+	2. Property Binding (Component/Model to View): []
+	3. Event Binding (View to Component/Model) : ()
+	4. Two-Way Data Binding (Component/Model to View to Component/Model) :[(ngModel)]
+
+
+	angular-routing-project
+
+
+-----------------------------------------------------------
+
+	ng g c main
+	ng g c home
+	ng g c about
+	ng g c contact
+
+-----------------------------------------------------------
+
+To Configure Routing:
+
+	
+
+
+
+
+
