@@ -1,0 +1,52 @@
+<h2>{{ message }}</h2>
+
+<!-- <h3>Interpolation Binding</h3>
+<p>Customer Code: {{ custObj.CustomerCode }}</p>
+<p>Customer Name: {{ custObj.CustomerName }}</p>
+<p>Customer Amount: {{ custObj.CustomerAmount }}</p> -->
+
+<!-- <h3>Property Binding (Component/Model to View) by using [] </h3>
+<p>Customer Code: <input type="text" name="CustomerCode" [value]="custObj.CustomerCode" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" [value]="custObj.CustomerName" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" [value]="custObj.CustomerAmount" /></p> -->
+
+<!-- <h3>Event Binding (View to Component/Model) by using () </h3>
+<p>Customer Code: <input type="text" name="CustomerCode" (input)="custObj.CustomerCode=$any($event.target).value" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" (input)="custObj.CustomerName=$any($event.target).value" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" (input)="custObj.CustomerAmount=$any($event.target).value" /></p> -->
+
+<!-- <h3>Two Way Data Binding (Component/Model to View to Component/Model) </h3>
+<p>Customer Code: <input type="text" name="CustomerCode" [value]="custObj.CustomerCode"
+        (input)="custObj.CustomerCode=$any($event.target).value" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" [value]="custObj.CustomerName"
+        (input)="custObj.CustomerName=$any($event.target).value" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" [value]="custObj.CustomerAmount"
+        (input)="custObj.CustomerAmount=$any($event.target).value" /></p> -->
+
+<!-- <h3>Two Way Data Binding using ngModel </h3>
+<p>Customer Code: <input type="text" name="CustomerCode" [(ngModel)]="custObj.CustomerCode" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" [(ngModel)]="custObj.CustomerName" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" [(ngModel)]="custObj.CustomerAmount" /></p> -->
+
+<!-- <h3>Interpolation Binding with Customer Interface</h3>
+<p>Customer Code: {{ customerObj.CustomerCode }}</p>
+<p>Customer Name: {{ customerObj.CustomerName }}</p>
+<p>Customer Age: {{ customerObj.CustomerAge }}</p> -->
+
+<table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+                <tr>
+                        <th>Customer Code</th>
+                        <th>Customer Name</th>
+                        <th>Customer Age</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let cust of customerList">
+                        <td>{{ cust.CustomerCode }}</td>
+                        <td>{{ cust.CustomerName }}</td>
+                        <td>{{ cust.CustomerAge }}</td>
+                </tr>
+        </tbody>
+
+</table>
