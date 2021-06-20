@@ -1,0 +1,13 @@
+<h3>Add New Employee</h3> <br />
+<form>
+    <div class="form-group">
+        <input type="text" name="name" class="form-control" [(ngModel)]="employee.name"
+            placeholder="Enter Employee Name.." />
+    </div> <br />
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" [(ngModel)]="employee.email"
+            placeholder="Enter Employee Email.." />
+    </div> <br />
+    <input type="submit" (click)="addEmployee()" value="Add Employee" class="btn btn-success" /> |
+    <input type="reset" value="Clear" class="btn btn-secondary" />
+</form>

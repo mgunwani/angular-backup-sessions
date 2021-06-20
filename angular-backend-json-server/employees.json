@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": 1001,
+      "name": "King Kochhar",
+      "email": "king.kochhar@gmail.com"
+    },
+    {
+      "id": 1002,
+      "name": "John Smith",
+      "email": "john.smith@gmail.com"
+    },
+    {
+      "id": 1003,
+      "name": "Sarah Bowling",
+      "email": "sarah.bowling@gmail.com"
+    },
+    {
+      "id": 1004,
+      "name": "Gautam Bhalla",
+      "email": "gautam.bhalla@gmail.com"
+    },
+    {
+      "id": 1005,
+      "name": "Sarah Bw",
+      "email": "sarah.bw@gmail.com"
+    },
+    {
+      "id": 1006,
+      "name": "Bhawna Gunwani",
+      "email": "bhawna@gmail.com"
+    },
+    {
+      "id": 1007,
+      "name": "Ashish Tapi",
+      "email": "ashish@gmail.com"
+    }
+  ]
+}
